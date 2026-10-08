@@ -1,0 +1,39 @@
+name: 번역 및 오탈자
+description: 오탈자, 용어 불일치, 어색한 표현을 제보합니다.
+title: "[번역] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제보는 공개됩니다. 원본 게임 파일이나 개인 정보는 첨부하지 마세요.
+  - type: input
+    id: patch_version
+    attributes:
+      label: 한글패치 버전
+      placeholder: 사용 중인 배포 버전 또는 패치 파일 이름
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: 문구가 나오는 위치
+      description: 장소, 캐릭터, 이벤트, 메뉴 등 확인 가능한 정보를 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: current_text
+    attributes:
+      label: 현재 문구 및 문제 내용
+      description: 게임에 표시된 문구를 가능한 한 그대로 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 수정 제안
+      description: 원하는 표현이나 참고할 내용이 있다면 적어 주세요. 선택 사항입니다.
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 스크린샷
+      description: 해당 문구와 앞뒤 상황이 보이면 확인에 도움이 됩니다.
